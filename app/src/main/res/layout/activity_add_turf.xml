@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Turf Name -->
+        <EditText
+            android:id="@+id/edtTurfName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Turf Name"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <!-- Turf Location -->
+        <EditText
+            android:id="@+id/edtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <!-- Turf Rating -->
+        <EditText
+            android:id="@+id/edtRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rating (out of 5)"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="numberDecimal"/>
+
+        <!-- Turf Area (✅ ADDED) -->
+        <EditText
+            android:id="@+id/edtArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area (Street Name)"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <!-- Google Maps Link -->
+        <EditText
+            android:id="@+id/edtMapsLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Google Maps Link"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textUri"/>
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+
+        <!-- Image Preview (✅ FIXED VISIBILITY) -->
+        <ImageView
+            android:id="@+id/imgTurfPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/> <!-- ✅ Initially Hidden -->
+
+        <!-- Add Turf Button -->
+        <Button
+            android:id="@+id/btnAddTurf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Turf"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+    </LinearLayout>
+</ScrollView>

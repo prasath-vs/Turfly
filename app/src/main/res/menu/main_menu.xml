@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_turf"
+            android:icon="@drawable/icon_booking"
+            android:title="Turf Booking" />
+        <item
+            android:id="@+id/nav_fitness"
+            android:icon="@drawable/icon_fitness"
+            android:title="Fitness" />
+        <item
+            android:id="@+id/nav_aichat"
+            android:icon="@drawable/icon_ai_chat"
+            android:title="AI Chat" />
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+<!--                <item-->
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:icon="@drawable/login_logo"-->
+<!--                    android:title="Login" />-->
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile_logo"
+                    android:title="Admin Profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share_logo"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/feedback_icon"
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate_logo"
+                android:title="Rate Us" />
+        </menu>
+    </item>
+</menu>
+

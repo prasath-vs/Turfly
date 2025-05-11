@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Turf Image -->
+        <ImageView
+            android:id="@+id/turfImage"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/turfimg"
+            android:layout_marginStart="8dp" />
+
+        <!-- Turf Name -->
+        <TextView
+            android:id="@+id/turfName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turf Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/turfImage"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Rating -->
+        <TextView
+            android:id="@+id/turfRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ 4.5"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/turfName"
+            android:layout_alignStart="@id/turfName"/>
+
+        <!-- Turf Area -->
+        <TextView
+            android:id="@+id/turfArea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Street Name, City"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/turfRating"
+            android:layout_alignStart="@id/turfName"/>
+
+        <!-- Location Link -->
+        <Button
+            android:id="@+id/turfLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📌 View on Map"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/turfArea"
+            android:layout_alignStart="@id/turfName"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Delete Button (Now correctly aligned) -->
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:backgroundTint="#FF0000"
+            android:visibility="gone"
+            android:layout_below="@id/turfLocation"
+            android:layout_alignStart="@id/turfName"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Book Now Button -->
+        <Button
+            android:id="@+id/bookNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

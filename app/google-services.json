@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "446572712273",
+    "project_id": "turfly-4e80b",
+    "storage_bucket": "turfly-4e80b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446572712273:android:4613b76bc827365f9b4370",
+        "android_client_info": {
+          "package_name": "com.example.turfly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSsgwZU_xyeY_LqglQEaMsrxysVn-8Xbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
